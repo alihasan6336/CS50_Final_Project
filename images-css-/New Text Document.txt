@@ -1,0 +1,2 @@
+To make a over layer color on image
+https://css-tricks.com/design-considerations-text-images/

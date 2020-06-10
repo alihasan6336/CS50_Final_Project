@@ -1,0 +1,32 @@
+{% extends "layouts/main_layout.html" %}
+
+{% block contant %}
+  <div class="container text-center">
+    <div class="box">
+      <form action="" method="POST">
+        <span class="text-center-input" style="margin-bottom: 14%;">register</span>
+        <div class="input-container">
+          <input type="text" name="name" autocomplete="off" autofocus required/>
+          <label>Name</label>		
+        </div>
+        <div class="input-container">
+          <input type="number" name="phone" min="0" autocomplete="off" required/>
+          <label>Phone</label>		
+        </div>
+        <div class="input-container">
+          <input type="text" name="email" autocomplete="off" required/>
+          <label>Email</label>		
+        </div>
+        <div class="input-container">		
+          <input type="password" name="password" required/>
+          <label>Password</label>
+        </div>
+        <div class="input-container">		
+          <input type="password" name="confirm" required/>
+          <label>Confirm</label>
+        </div>
+        <input type="submit" class="btn-input hvr-float"></input>
+      </form>	
+    </div>
+  </div>
+{% endblock %}

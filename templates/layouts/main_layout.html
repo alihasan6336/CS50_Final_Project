@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="static/styles.css?version=200">
+    <link rel="stylesheet" href="static/primary_button.css">
+    <link rel="stylesheet" href="static/hover.css?version=39">
+    <link rel="stylesheet" href="static/scroll_bar.css?version=15">
+    <link rel="stylesheet" href="static/fade_in.css?version=40">
+    <link rel="stylesheet" href="static/form_input.css?version=46">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    
+    <script src="static/fade_in_scroll.js?version=25"></script>
+    <title>{% block title %} {% endblock %}</title>
+  </head>
+  <body style="background-image: url(static/back3.png);">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-bottom: 0px; visibility: hidden;">
+        <a class="navbar-brand " href="#">
+            <img src="static/logo22.png" width="80" height="52" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+      </nav>
+      
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark back-shadow" style="padding-bottom: 0px;">
+        <a class="navbar-brand hvr-bounce-in" href="/home">
+          <img src="static/logo21.png" width="80" height="52" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          Menu<span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <a href="/home" style="color: white; text-decoration: none;">
+              <li class="nav-item active">
+                <div class="button-outline button-rainbowback {% if home %} selected backgound {% endif %}" style="width: 5em; height: 1.7em;">
+                  <div id="button-three">
+                    <span style="vertical-align: middle;">Home</span>
+                  </div>
+                </div>
+              </li>
+            </a>
+
+            <a href="/about-us" style="color: white; text-decoration: none;">
+              <li class="nav-item active">
+                <div class="button-outline button-rainbowback {% if aboutUs %} selected backgound {% endif %}" style="width: 5em; height: 1.7em;">
+                  <div id="button-three">
+                    <span style="vertical-align: middle;">About us</span>
+                  </div>
+                </div>
+              </li>
+            </a>
+
+            <a href="" style="color: white; text-decoration: none;">
+              <li class="nav-item active">
+                <div class="button-outline button-rainbowback {% if contact %} selected backgound {% endif %}" style="width: 5em; height: 1.7em;">
+                  <div id="button-three">
+                    <span style="vertical-align: middle;">Contact</span>
+                  </div>
+                </div>
+              </li>
+            </a>
+
+            <li class="nav-item dropdown" style="padding-top: 5px;">
+              <div class="dropdown mr-1" style=" margin-left: .5em;">
+                <button type="button" class="btn {% if tracks %} btn-info {% else %} btn-outline-info {% endif %} dropdown-toggle hvr-float-shadow" id="dropdownMenuOffset"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Tracks
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                  <a class="dropdown-item {% if itm1 %} active {% endif %} hvr-bounce-to-right" href="#">Bodybuilding</a>
+                  <a class="dropdown-item {% if itm2 %} active {% endif %} hvr-bounce-to-right" href="#">Fitness</a>
+                  <a class="dropdown-item {% if itm3 %} active {% endif %} hvr-bounce-to-right" href="#">Fighting Games</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div>
+            <a href="/login" class="navbar-text hvr-grow-rotate left-nav-text" style="padding-right: 0.5em; ">Login</a>
+            <a href="/register" class="navbar-text hvr-grow-rotate left-nav-text">Register</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <main role="main" >
+
+        {% block contant %} {% endblock %}
+
+        <footer class="page-footer font-small special-color-dark pt-4 fixed-bottom">
+          <div class="footer-copyright 
+          text-center py-3">© 2020 Copyright:
+            <a href="#"> Ali Hassan</a>
+            <a href=""></a>
+          </div>
+        </footer>
+    </main>    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="static/JS/background_scroller.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/count_up.js?version=15"></script>
+  </body>
+</html>

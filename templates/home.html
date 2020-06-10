@@ -1,0 +1,129 @@
+{% extends "layouts/main_layout.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block contant %}
+  <div id="myCarousel" class="carousel slide back-shadow" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide" src="static/rope2.png" alt="First slide">
+        <div class="container over">
+          <div class="carousel-caption carousel-background">
+            <h1>Example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-outline-light" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="second-slide" src="static/down2.png" alt="Second slide">
+        <div class="container">
+          <div class="carousel-caption carousel-background">
+            <h1>Another example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-outline-light" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="third-slide" src="static/run3.png" alt="Third slide">
+        <div class="container">
+          <div class="carousel-caption carousel-background">
+            <h1>One more for good measure.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-outline-light" href="#" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container marketing">
+    <div class="row"  style="color: whitesmoke;">
+      <div class="col-lg-4">
+        <span class="hvr-grow"><a href="" class="hvr-bubble-float-bottom"><img class="hvr-bob" src="static/Bodybuilding_logo.png" alt="Generic placeholder image" width="140" height="140"></a></span>
+        <div class="back-alpha">
+          <h2 class="fade-int2">Bodybuilding</h2>
+          <p class="fade-int1">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-outline-light hvr-wobble-horizontal" href="#" role="button">See more &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <span class="hvr-grow"><a href="" class="hvr-bubble-float-bottom"><img class="hvr-bob" src="static/Fitness_logo1.png" alt="Generic placeholder image" width="140" height="140"></a></span>
+        <div class="back-alpha">
+          <h2 class="fade-int2">Fitness</h2>
+          <p class="fade-int1">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-outline-light hvr-wobble-horizontal" href="#" role="button">See more &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <span class="hvr-grow"><a href="" class="hvr-bubble-float-bottom"><img class=" hvr-bob" src="static/Fighters.png" alt="Generic placeholder image" width="140" height="140"></a></span>
+        <div class="back-alpha">
+          <h2 class="fade-int2">Fighting Games</h2>
+          <p class="fade-int1">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-outline-light hvr-wobble-horizontal" href="#" role="button">See more &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 back-alpha hvr-wobble-bottom fade-in1t">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p class="text-center"><a class="btn hvr-buzz hvr-sweep-to-right" href="#" role="button" style="color: whitesmoke;">See more &raquo;</a></p>
+      </div>
+      <div class="col-md-5 fade-in1">
+        <img class="featurette-image img-fluid mx-auto back-shadow" src="static/dimples.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 back-alpha hvr-wobble-bottom fade-in2t">
+        <h2 class="featurette-heading">Oh yeah, it's that good.<span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p class="text-center"><a class="btn hvr-buzz hvr-sweep-to-right" href="#" role="button" style="color: whitesmoke;">See more &raquo;</a></p>
+      </div>
+      <div class="col-md-5 order-md-1 fade-in2">
+        <img class="featurette-image img-fluid mx-auto back-shadow" src="static/manv2.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 back-alpha hvr-wobble-bottom fade-in3t">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p class="text-center"><a class="btn hvr-buzz hvr-sweep-to-right" href="#" role="button" style="color: whitesmoke;">See more &raquo;</a></p>
+      </div>
+      <div class="col-md-5 fade-in3">
+        <img class="featurette-image img-fluid mx-auto back-shadow" src="static/man.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div>
+
+{% endblock %}
