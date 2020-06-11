@@ -1,0 +1,109 @@
+.fade-in1 {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1.5s ease-out;
+}
+
+.fade-in1.show1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in1t {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s ease-out;
+}
+
+.fade-in1t.show1t {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in2t {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1s ease-out;
+}
+
+.fade-in2t.show2t {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in3t {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s ease-out;
+}
+
+.fade-in3t.show3t {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in2 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1.5s ease-out;
+}
+
+.fade-in2.show2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in3 {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1.5s ease-out;
+}
+
+.fade-in3.show3 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-int1 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease-out;
+}
+
+.fade-int1.showt1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-int2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s ease-out;
+}
+
+.fade-int2.showt2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-int2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s ease-out;
+}
+
+.fade-int2.showt2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-block {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease-out;
+}
+
+.fade-in-block.show-block {
+    opacity: 1;
+    transform: translateY(0);
+}

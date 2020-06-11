@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="static/hover.css?version=39">
     <link rel="stylesheet" href="static/scroll_bar.css?version=15">
     <link rel="stylesheet" href="static/fade_in.css?version=40">
-    <link rel="stylesheet" href="static/form_input.css?version=46">
+    {% if formPage %}
+      <link rel="stylesheet" href="static/form_input.css?version=56">
+    {% endif %}
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -20,9 +22,11 @@
 
     
     <script src="static/fade_in_scroll.js?version=25"></script>
+    <script src="static/JS/form-js.js?version=6"></script>
+
     <title>{% block title %} {% endblock %}</title>
   </head>
-  <body style="background-image: url(static/back3.png);">
+  <body style="background-image: {% if formPage %} url(static/back3-cut1.png); {% else %} url(static/back3.png); {% endif %}">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-bottom: 0px; visibility: hidden;">
         <a class="navbar-brand " href="#">
@@ -96,14 +100,6 @@
     <main role="main" >
 
         {% block contant %} {% endblock %}
-
-        <footer class="page-footer font-small special-color-dark pt-4 fixed-bottom">
-          <div class="footer-copyright 
-          text-center py-3">© 2020 Copyright:
-            <a href="#"> Ali Hassan</a>
-            <a href=""></a>
-          </div>
-        </footer>
     </main>    
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

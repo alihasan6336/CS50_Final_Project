@@ -5,6 +5,11 @@
     <div class="box">
       <form action="" method="POST">
         <span class="text-center-input">login</span>
+        {% if error %}
+          <div class="alert alert-danger" role="alert" style="background-color: red; border: 0px; color: whitesmoke;">
+            {{ error }}
+          </div>
+        {% endif %}
         <div class="input-container">
           <input type="text" name="email" autocomplete="off" autofocus required/>
           <label>Email</label>		
@@ -14,7 +19,7 @@
           <input type="password" name="password" required/>
           <label>Password</label>
         </div>
-        <input type="submit" class="btn-input hvr-float"></input>
+        <input type="submit" class="btn-input hvr-float" value="Login">
       </form>	
     </div>
   </div>

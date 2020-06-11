@@ -2,9 +2,14 @@
 
 {% block contant %}
   <div class="container text-center">
-    <div class="box">
+    <div class="box" style="margin-top: 20px; padding-bottom: 30px;">
       <form action="" method="POST">
-        <span class="text-center-input" style="margin-bottom: 14%;">register</span>
+        <span class="text-center-input" style="margin-bottom: 10%;">register</span>
+        {% if error %}
+          <div class="alert alert-danger" role="alert" style="background-color: red; border: 0px; color: whitesmoke;">
+            {{ error }}
+          </div>
+        {% endif %}
         <div class="input-container">
           <input type="text" name="name" autocomplete="off" autofocus required/>
           <label>Name</label>		
@@ -25,7 +30,7 @@
           <input type="password" name="confirm" required/>
           <label>Confirm</label>
         </div>
-        <input type="submit" class="btn-input hvr-float"></input>
+        <input type="submit" class="btn-input hvr-float" value="register" style="margin-top: 20px;">
       </form>	
     </div>
   </div>

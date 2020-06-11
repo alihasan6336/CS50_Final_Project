@@ -1,0 +1,128 @@
+  .button-rainbowback {
+    position: relative;
+    display: inline-block;
+    margin: .5em;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .button-rainbowback:hover,
+  .button-rainbowback:active,
+  .button-rainbowback:focus-within {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  }
+  
+  .button-outline {
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    /*overflow: hidden;*/
+    padding: 1em 3em;
+    text-align: center;
+  }
+  .ver {
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    /*overflow: hidden;*/
+    padding: 1em 3em;
+    text-align: center;
+  }
+  
+  .button-outline #button-three {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #212529;
+    transform: skew(-10deg) rotate(2deg);
+  -webkit-transform: skew(-10deg) rotate(2deg);
+  -moz-transform: skew(-10deg) rotate(2deg);
+    width: 105%;
+    height: 105%;
+  }
+
+  .ver #bodd {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #212529;
+    transform: skew(-10deg) rotate(2deg);
+  -webkit-transform: skew(-10deg) rotate(2deg);
+  -moz-transform: skew(-10deg) rotate(2deg);
+    width: 105%;
+    height: 105%;
+  }
+  
+  .button-outline:hover #button-three,
+  .button-outline:active #button-three
+  .button-outlinee:focus-within #button-three {      
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 5s ease infinite;
+  }
+
+  .ver:hover #bodd,
+  .ver:active #bodd
+  .ver:focus-within #bodd {      
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 5s ease infinite;
+  }
+
+  .selected #button-three,
+  .backgound {      
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 5s ease infinite;
+
+  }
+
+  .button-outline a {
+    position: relative;
+  }
+
+  .ver a {
+    position: relative;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  .button-outline:hover,
+  .button-outline:active,
+  .button-outline:focus-within {
+    animation: bounceIn 1s;
+  }
+
+  .ver:hover,
+  .ver:active,
+  .ver:focus-within {
+    animation: bounceIn 1s;
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
