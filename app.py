@@ -147,9 +147,23 @@ def register():
         return redirect("/login")
 
 
-@app.route("/bodybuilding", methods=['GET', 'POST'])
-def bodybuilding():
-    return render_template("bodybuilding.html")
+@app.route("/contact-us", methods=['GET', 'POST'])
+def contactUs():
+    if request.method == "GET":
+        return render_template("contact-us.html", contactUs=True)
+    else:
+        email = request.form.get("email")
+        phone = request.form.get("phone")
+        message = request.form.get("message")
+
+        if len(email) > 45:
+            return render_template("contact-us.html", contactUs=True, error="Invalid email")
+        if len(phone) > 25:
+            return render_template("contact-us.html", contactUs=True, error="Invalid phone")
+        
+        PutChangesInDatabase("INSERT INTO contact_info(email, phone, message) VALUES(%s, %s, %s)", (email, phone, message))
+
+        return redirect('/')
 
 if __name__ == "__main__":
     app.run(debug=True)
